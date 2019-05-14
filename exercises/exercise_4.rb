@@ -19,3 +19,9 @@ puts  "All Mens Apparel Stores"
 @mens_stores.each do |store|
   puts "Store: #{store[:name]}, Annaual Revenue: #{store[:annual_revenue]}"
 end
+
+@womens_stores = Store.where(womens_apparel: true, annual_revenue: 0..1000000)
+
+#* Client.where("orders_count <= ? AND locked = ?", params[:orders], false)
+
+pp @womens_stores
