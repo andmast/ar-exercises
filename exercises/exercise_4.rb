@@ -22,6 +22,6 @@ end
 
 @womens_stores = Store.where(womens_apparel: true, annual_revenue: 0..1000000)
 
-#* Client.where("orders_count <= ? AND locked = ?", params[:orders], false)
+#* Client.where("orders_count <= ? AND locked = ?")
 
 pp @womens_stores
