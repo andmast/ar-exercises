@@ -14,7 +14,7 @@ puts @store1.inspect
 
 puts @store2.inspect
 
-@store1.name = "Andrea's Store"
+@store1.name = "Toronto"
 @store1.save
 
 puts @store1.inspect
